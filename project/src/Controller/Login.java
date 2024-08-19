@@ -2,9 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package project;
+package Controller;
 
-import library.ConnectionProvider;
+import Controller.library;
+import Model.ConnectionProvider;
 import java.sql.*;
 import javax.swing.JOptionPane;
 
@@ -46,7 +47,6 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(790, 600));
-        setPreferredSize(new java.awt.Dimension(790, 600));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -56,7 +56,7 @@ public class Login extends javax.swing.JFrame {
         jPanel2.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/logo222.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/logo222.png"))); // NOI18N
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 88, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("JetBrains Mono", 1, 24)); // NOI18N
@@ -127,14 +127,15 @@ public class Login extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(forgotPasswordButton)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                            .addComponent(jLabel6)
-                                            .addGap(81, 81, 81))
-                                        .addComponent(jLabel5)
-                                        .addComponent(jLabel4)
                                         .addComponent(loginEmail)
                                         .addComponent(loginPassword)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE))))
+                                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 311, Short.MAX_VALUE)
+                                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jLabel6)
+                                                .addComponent(jLabel5)
+                                                .addComponent(jLabel4))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(137, 137, 137)
                                 .addComponent(SignUpLoginButton)))

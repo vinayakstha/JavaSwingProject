@@ -2,11 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package project;
+package Controller;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
-import library.ConnectionProvider;
+import Model.ConnectionProvider;
 import net.proteanit.sql.DbUtils;
 import java.util.Date;
 
@@ -143,7 +143,7 @@ public class library extends javax.swing.JFrame {
         addBook.setBackground(new java.awt.Color(102, 204, 0));
         addBook.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         addBook.setForeground(new java.awt.Color(255, 255, 255));
-        addBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/add.png"))); // NOI18N
+        addBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/add.png"))); // NOI18N
         addBook.setText("ADD");
         addBook.setFocusable(false);
         addBook.addActionListener(new java.awt.event.ActionListener() {
@@ -155,7 +155,7 @@ public class library extends javax.swing.JFrame {
         bookUpdate.setBackground(new java.awt.Color(0, 102, 255));
         bookUpdate.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         bookUpdate.setForeground(new java.awt.Color(255, 255, 255));
-        bookUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/update.png"))); // NOI18N
+        bookUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/update.png"))); // NOI18N
         bookUpdate.setText("UPDATE");
         bookUpdate.setFocusable(false);
         bookUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -167,7 +167,7 @@ public class library extends javax.swing.JFrame {
         bookDelete.setBackground(new java.awt.Color(255, 51, 51));
         bookDelete.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         bookDelete.setForeground(new java.awt.Color(255, 255, 255));
-        bookDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/delete.png"))); // NOI18N
+        bookDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/delete.png"))); // NOI18N
         bookDelete.setText("DELETE");
         bookDelete.setFocusable(false);
         bookDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -179,7 +179,7 @@ public class library extends javax.swing.JFrame {
         clearBook.setBackground(new java.awt.Color(255, 153, 0));
         clearBook.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         clearBook.setForeground(new java.awt.Color(255, 255, 255));
-        clearBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/clear.png"))); // NOI18N
+        clearBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/clear.png"))); // NOI18N
         clearBook.setText("CLEAR");
         clearBook.setFocusable(false);
         clearBook.addActionListener(new java.awt.event.ActionListener() {
@@ -191,7 +191,7 @@ public class library extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/search.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/search.png"))); // NOI18N
         jButton1.setText("SEARCH");
         jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -301,7 +301,7 @@ public class library extends javax.swing.JFrame {
         addMember.setBackground(new java.awt.Color(102, 204, 0));
         addMember.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         addMember.setForeground(new java.awt.Color(255, 255, 255));
-        addMember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/add.png"))); // NOI18N
+        addMember.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/add.png"))); // NOI18N
         addMember.setText("ADD");
         addMember.setFocusable(false);
         addMember.addActionListener(new java.awt.event.ActionListener() {
@@ -313,7 +313,7 @@ public class library extends javax.swing.JFrame {
         memberUpdate.setBackground(new java.awt.Color(0, 102, 255));
         memberUpdate.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         memberUpdate.setForeground(new java.awt.Color(255, 255, 255));
-        memberUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/update.png"))); // NOI18N
+        memberUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/update.png"))); // NOI18N
         memberUpdate.setText("UPDATE");
         memberUpdate.setFocusable(false);
         memberUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -325,7 +325,7 @@ public class library extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(255, 51, 51));
         jButton3.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/delete.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/delete.png"))); // NOI18N
         jButton3.setText("DELETE");
         jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -337,7 +337,7 @@ public class library extends javax.swing.JFrame {
         memberClear.setBackground(new java.awt.Color(255, 153, 0));
         memberClear.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         memberClear.setForeground(new java.awt.Color(255, 255, 255));
-        memberClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/clear.png"))); // NOI18N
+        memberClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/clear.png"))); // NOI18N
         memberClear.setText("CLEAR");
         memberClear.setFocusable(false);
         memberClear.addActionListener(new java.awt.event.ActionListener() {
@@ -349,7 +349,7 @@ public class library extends javax.swing.JFrame {
         memberSearch.setBackground(new java.awt.Color(51, 51, 51));
         memberSearch.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         memberSearch.setForeground(new java.awt.Color(255, 255, 255));
-        memberSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/search.png"))); // NOI18N
+        memberSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/search.png"))); // NOI18N
         memberSearch.setText("SEARCH");
         memberSearch.setFocusable(false);
         memberSearch.addActionListener(new java.awt.event.ActionListener() {
@@ -449,7 +449,7 @@ public class library extends javax.swing.JFrame {
         issueBookButton.setBackground(new java.awt.Color(0, 153, 255));
         issueBookButton.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         issueBookButton.setForeground(new java.awt.Color(255, 255, 255));
-        issueBookButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/borrow.png"))); // NOI18N
+        issueBookButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/borrow.png"))); // NOI18N
         issueBookButton.setText("ISSUE BOOK");
         issueBookButton.setFocusable(false);
         issueBookButton.addActionListener(new java.awt.event.ActionListener() {
@@ -461,7 +461,7 @@ public class library extends javax.swing.JFrame {
         clearIssue.setBackground(new java.awt.Color(255, 153, 0));
         clearIssue.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         clearIssue.setForeground(new java.awt.Color(255, 255, 255));
-        clearIssue.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/clear.png"))); // NOI18N
+        clearIssue.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/clear.png"))); // NOI18N
         clearIssue.setText("CLEAR");
         clearIssue.setFocusable(false);
         clearIssue.addActionListener(new java.awt.event.ActionListener() {
@@ -547,7 +547,7 @@ public class library extends javax.swing.JFrame {
         searchButton.setBackground(new java.awt.Color(51, 51, 51));
         searchButton.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         searchButton.setForeground(new java.awt.Color(255, 255, 255));
-        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/search.png"))); // NOI18N
+        searchButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/search.png"))); // NOI18N
         searchButton.setText("SEARCH");
         searchButton.setFocusable(false);
         searchButton.addActionListener(new java.awt.event.ActionListener() {
@@ -559,7 +559,7 @@ public class library extends javax.swing.JFrame {
         returnBookButton.setBackground(new java.awt.Color(255, 51, 51));
         returnBookButton.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         returnBookButton.setForeground(new java.awt.Color(255, 255, 255));
-        returnBookButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/replay_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20 (1).png"))); // NOI18N
+        returnBookButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/replay_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20 (1).png"))); // NOI18N
         returnBookButton.setText("RETURN BOOK");
         returnBookButton.setFocusable(false);
         returnBookButton.addActionListener(new java.awt.event.ActionListener() {
@@ -571,7 +571,7 @@ public class library extends javax.swing.JFrame {
         clearReturn.setBackground(new java.awt.Color(255, 153, 0));
         clearReturn.setFont(new java.awt.Font("JetBrains Mono", 0, 14)); // NOI18N
         clearReturn.setForeground(new java.awt.Color(255, 255, 255));
-        clearReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/clear.png"))); // NOI18N
+        clearReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/clear.png"))); // NOI18N
         clearReturn.setText("CLEAR");
         clearReturn.setFocusable(false);
         clearReturn.addActionListener(new java.awt.event.ActionListener() {
@@ -645,11 +645,11 @@ public class library extends javax.swing.JFrame {
         jTabbedPane1.addTab("Return Books", jPanel4);
 
         jLabel1.setFont(new java.awt.Font("JetBrains Mono", 1, 14)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/logo2.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/logo2.png"))); // NOI18N
         jLabel1.setText("Nanathari Library");
 
         jLabel22.setFont(new java.awt.Font("JetBrains Mono", 1, 14)); // NOI18N
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/account_circle_16dp_00000_FILL0_wght400_GRAD0_opsz20 (1).png"))); // NOI18N
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/account_circle_16dp_00000_FILL0_wght400_GRAD0_opsz20 (1).png"))); // NOI18N
         jLabel22.setText("Admin");
 
         dateLabel.setFont(new java.awt.Font("JetBrains Mono", 1, 16)); // NOI18N
