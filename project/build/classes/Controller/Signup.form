@@ -8,8 +8,6 @@
     </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
-//The JFrame properties are being set here, including the minimum size to 790x600 pixels, 
-the close operation to EXIT_ON_CLOSE (value 3), and the resizable property set to false
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
@@ -25,7 +23,6 @@ the close operation to EXIT_ON_CLOSE (value 3), and the resizable property set t
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
   </AuxValues>
-//This section of the code defines the layout for the sign-up form
 
   <Layout>
     <DimensionLayout dim="0">
